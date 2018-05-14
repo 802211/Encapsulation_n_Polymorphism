@@ -85,7 +85,7 @@ System.out.println(memberObj.getClass());
 	public void setMember(String memberObj) {
 	
 		Object m = (Object) memberObj;
-		
+		 
 		this.memberObj = m;
 	}
 	

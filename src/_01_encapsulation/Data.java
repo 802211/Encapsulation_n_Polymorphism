@@ -18,7 +18,7 @@ String x = "xxx";
 		assertEquals(0, ED.getItem());
 		ED.setItem(-529);
 		assertEquals(0, ED.getItem());
-		ED.setItem(33);
+		 ED.setItem(33);
 		assertEquals(33, ED.getItem());
 	}
 
