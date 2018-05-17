@@ -21,7 +21,7 @@ public class EncapsulateTheData {
 	private float degreesTurned; // must be locked between 0.0 and 360.0 inclusive.
 	private String nomenclature = " "; // must not be set to a blank string. Blank Strings get set to a space
 	private Object memberObj; // can be any object type except String. Strings get turned into objects.
-String temp = "";
+	String temp = "";
 
 	// 1. Encapsulate the member variables.
 	// Add restrictions to the setters according to the comment.
@@ -78,15 +78,11 @@ System.out.println(memberObj.getClass());
 
 	
 	public void setMember(Object memberObj) {
+	if (memberObj instanceof String) {
+		memberObj = new Object(); 
+	}
 	
 		this.memberObj = memberObj;
-	}
-
-	public void setMember(String memberObj) {
-	
-		Object m = (Object) memberObj;
-		 
-		this.memberObj = m;
 	}
 	
 	public static void main(String[] args) {
