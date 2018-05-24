@@ -23,7 +23,7 @@
 											\\-//\\<+!#!+>//\\-//**??**|!| START HERE |!|**??**\\-//\\<+!#!+>//\\-//
 											
 											 
-6. Use for-each loops to call the draw and update method for all the Polymorphs in the list.
+6. // /// // FIX \\ \\\ \\ Use for-each loops to call the draw and update method for all the Polymorphs in the list.
 
 
 7. Let's create more Polymorphs! Create a new sub-class of Polymorphs for each of the following…

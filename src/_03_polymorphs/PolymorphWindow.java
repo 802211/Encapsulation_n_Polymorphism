@@ -36,7 +36,7 @@ public class PolymorphWindow extends JPanel implements ActionListener {
 
 	public void drawUpdate() {
 		for (Polymorph p : array) {
-			p.draw(g);
+			p.draw(g); // /// // !!!FIX!!! \\ \\\ \\
 			p.update();
 		}
 	}
