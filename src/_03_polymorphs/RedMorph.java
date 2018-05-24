@@ -1,12 +1,13 @@
 package _03_polymorphs;
+
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class RedMorph extends Polymorph{
+public class RedMorph extends Polymorph {
 
 	RedMorph(int x, int y, int width, int height) {
 		super(x, y, width, height);
-		
+
 	}
 
 	@Override
@@ -16,4 +17,7 @@ public class RedMorph extends Polymorph{
 		g.fillRect(getX(), getY(), getWidth(), getHeight());
 	}
 
+	public void update() {
+
+	}
 }
