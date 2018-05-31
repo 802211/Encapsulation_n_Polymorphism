@@ -1,6 +1,5 @@
 package _03_polymorphs;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
@@ -22,7 +21,7 @@ public class PolymorphWindow extends JPanel implements ActionListener {
 	ArrayList<Polymorph> array = new ArrayList<Polymorph>();
 
 	public void addToArray() {
-
+		// System.out.println("test2");
 		array.add(new BluePolymorph(0, 0, WIDTH, HEIGHT));
 		array.add(new RedMorph(50, 50, WIDTH, HEIGHT));
 		array.add(new MovingMorph(100, 100, WIDTH, HEIGHT));
@@ -34,15 +33,11 @@ public class PolymorphWindow extends JPanel implements ActionListener {
 		array.add(new MovingMorph(400, 400, WIDTH, HEIGHT));
 	}
 
-	public void drawUpdate() {
-		for (Polymorph p : array) {
-			p.draw(g); // /// // !!!FIX!!! \\ \\\ \\
-			p.update();
-		}
-	}
-
 	public static void main(String[] args) {
-		new PolymorphWindow().buildWindow();
+		PolymorphWindow PolyWind = new PolymorphWindow();
+		PolyWind.addToArray();
+		PolyWind.buildWindow();
+
 	}
 
 	public void buildWindow() {
@@ -59,11 +54,15 @@ public class PolymorphWindow extends JPanel implements ActionListener {
 
 	public void paintComponent(Graphics g) {
 		// draw background
-		g.setColor(Color.LIGHT_GRAY);
-		g.fillRect(0, 0, 50, 50);
-
+		// g.setColor(Color.LIGHT_GRAY);
+		// g.fillRect(0, 0, 50, 50);
+		// System.out.println("test");
 		// draw polymorph
-
+		for (Polymorph p : array) {
+			// System.out.println("test");
+			p.draw(g);
+			p.update();
+		}
 	}
 
 	@Override

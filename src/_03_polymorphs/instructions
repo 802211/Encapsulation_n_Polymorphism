@@ -19,15 +19,18 @@
 	Create an ArrayList of Polymorphs inside your PolymorphWindow class. Initialize the ArrayList and add a bunch of different types of
 	Polymorph objects to the array list.
 
-
-											\\-//\\<+!#!+>//\\-//**??**|!| START HERE |!|**??**\\-//\\<+!#!+>//\\-//
-											
-											 
-6. // /// // FIX \\ \\\ \\ Use for-each loops to call the draw and update method for all the Polymorphs in the list.
+6. Use for-each loops to call the draw and update method for all the Polymorphs in the list.
 
 
 7. Let's create more Polymorphs! Create a new sub-class of Polymorphs for each of the following…
-	a) Create a Polymorph that moves in a circle. hint: Math.sin() Math.cos()
+	
+
+											\\-//\\<+!#!+>//\\-//**??**|!| START HERE |!|**??**\\-//\\<+!#!+>//\\-//
+											
+											
+	 a) Create a Polymorph that moves in a circle. hint: 
+				Math.sin() = opposite/hypotenuse 
+				Math.cos() = adjacent/hypotenuse 
 	b) Create a Polymorph that follows your mouse.
 	c) Create a Polymorph that displays an image.
 	d) Create a Polymorph that displays a JOptionPane message dialog when clicked.
