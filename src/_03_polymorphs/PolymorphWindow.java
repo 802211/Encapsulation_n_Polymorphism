@@ -35,6 +35,9 @@ public class PolymorphWindow extends JPanel implements ActionListener {
 		array.add(new BluePolymorph(150, 150, WIDTH, HEIGHT));
 		array.add(new RedMorph(350, 350, WIDTH, HEIGHT));
 		array.add(new MovingMorph(400, 400, WIDTH, HEIGHT));
+		MessagePolymorph MP = new MessagePolymorph(450, 450, WIDTH, HEIGHT);
+		window.addMouseListener(MP);
+		array.add(MP);
 	}
 
 	public static void main(String[] args) {
